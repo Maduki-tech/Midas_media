@@ -1,26 +1,14 @@
 import { type NextPage } from 'next';
-import dynamic from 'next/dynamic';
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
-import LineTo from 'react-lineto';
 import Sec2 from '~/Components/Sec2';
 import Sec3 from '~/Components/Sec3';
 import Sec4 from '~/Components/Sec4';
+import Sec5 from '~/Components/Sec5';
+import Sec6 from '~/Components/Sec6';
+import HandleLine from '~/Components/handleLine';
 import Sec1 from '~/Components/sec1';
 
-const DynamicSteppedLineTo = dynamic(
-    () => import('react-lineto').then((mod) => mod.SteppedLineTo),
-    {
-        ssr: false,
-    }
-);
-
 const Home: NextPage = () => {
-    const [isClient, setIsClient] = useState(false);
-
-    useEffect(() => {
-        setIsClient(true);
-    }, []);
 
     return (
         <div className="px-32">
@@ -34,123 +22,9 @@ const Home: NextPage = () => {
                 <Sec2 />
                 <Sec3 />
                 <Sec4 />
-                {isClient && (
-                    <DynamicSteppedLineTo
-                        from="A"
-                        to="B"
-                        borderStyle="dashed"
-                        fromAnchor="left"
-                        toAnchor="right"
-                        orientation="h"
-                        borderWidth={2}
-                    />
-                )}
-                {isClient && (
-                    <DynamicSteppedLineTo
-                        from="B"
-                        to="C"
-                        borderStyle="dashed"
-                        fromAnchor="left"
-                        toAnchor="left"
-                        orientation="v"
-                        borderWidth={2}
-                    />
-                )}
-                {isClient && (
-                    <DynamicSteppedLineTo
-                        from="C"
-                        to="D"
-                        borderStyle="dashed"
-                        fromAnchor="center"
-                        toAnchor="center"
-                        orientation="v"
-                        borderWidth={2}
-                    />
-                )}
-                {isClient && (
-                    <DynamicSteppedLineTo
-                        from="D"
-                        to="E"
-                        borderStyle="dashed"
-                        fromAnchor="center"
-                        toAnchor="left"
-                        borderWidth={2}
-                    />
-                )}
-                {isClient && (
-                    <DynamicSteppedLineTo
-                        from="E"
-                        to="F"
-                        borderStyle="dashed"
-                        fromAnchor="right"
-                        toAnchor="left"
-                        borderWidth={2}
-                    />
-                )}
-                {isClient && (
-                    <DynamicSteppedLineTo
-                        from="F"
-                        to="H"
-                        borderStyle="dashed"
-                        fromAnchor="left"
-                        toAnchor="right"
-                        borderWidth={2}
-                    />
-                )}
-                {isClient && (
-                    <DynamicSteppedLineTo
-                        from="H"
-                        to="G"
-                        borderStyle="dashed"
-                        fromAnchor="left"
-                        toAnchor="right"
-                        borderWidth={2}
-                    />
-                )}
-                {isClient && (
-                    <DynamicSteppedLineTo
-                        from="G"
-                        to="I"
-                        borderStyle="dashed"
-                        fromAnchor="left"
-                        toAnchor="right"
-                        orientation="h"
-                        borderWidth={2}
-                    />
-                )}
-                {isClient && (
-                    <DynamicSteppedLineTo
-                        from="I"
-                        to="L"
-                        borderStyle="dashed"
-                        fromAnchor="left"
-                        toAnchor="right"
-                        orientation="h"
-                        borderWidth={2}
-                    />
-                )}
-                {isClient && (
-                    <DynamicSteppedLineTo
-                        from="L"
-                        to="K"
-                        borderStyle="dashed"
-                        fromAnchor="left"
-                        toAnchor="right"
-                        orientation="h"
-                        borderWidth={2}
-                    />
-                )}
-                {isClient && (
-                    <DynamicSteppedLineTo
-                        from="K"
-                        to="J"
-                        borderStyle="dashed"
-                        fromAnchor="right"
-                        toAnchor="center"
-                        orientation="v"
-                        borderWidth={2}
-                    />
-                )}
+                <Sec5 />
+                <Sec6 />
+                <HandleLine />
             </main>
         </div>
     );
