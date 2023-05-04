@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import LineTo from 'react-lineto';
 import Sec2 from '~/Components/Sec2';
 import Sec3 from '~/Components/Sec3';
+import Sec4 from '~/Components/Sec4';
 import Sec1 from '~/Components/sec1';
 
 const DynamicSteppedLineTo = dynamic(
@@ -32,6 +33,7 @@ const Home: NextPage = () => {
                 <Sec1 />
                 <Sec2 />
                 <Sec3 />
+                <Sec4 />
                 {isClient && (
                     <DynamicSteppedLineTo
                         from="A"
@@ -102,6 +104,50 @@ const Home: NextPage = () => {
                         borderStyle="dashed"
                         fromAnchor="left"
                         toAnchor="right"
+                        borderWidth={2}
+                    />
+                )}
+                {isClient && (
+                    <DynamicSteppedLineTo
+                        from="G"
+                        to="I"
+                        borderStyle="dashed"
+                        fromAnchor="left"
+                        toAnchor="right"
+                        orientation="h"
+                        borderWidth={2}
+                    />
+                )}
+                {isClient && (
+                    <DynamicSteppedLineTo
+                        from="I"
+                        to="L"
+                        borderStyle="dashed"
+                        fromAnchor="left"
+                        toAnchor="right"
+                        orientation="h"
+                        borderWidth={2}
+                    />
+                )}
+                {isClient && (
+                    <DynamicSteppedLineTo
+                        from="L"
+                        to="K"
+                        borderStyle="dashed"
+                        fromAnchor="left"
+                        toAnchor="right"
+                        orientation="h"
+                        borderWidth={2}
+                    />
+                )}
+                {isClient && (
+                    <DynamicSteppedLineTo
+                        from="K"
+                        to="J"
+                        borderStyle="dashed"
+                        fromAnchor="right"
+                        toAnchor="center"
+                        orientation="v"
                         borderWidth={2}
                     />
                 )}

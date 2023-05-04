@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Sec2() {
     return (
-        <div className="flex flex-col items-center gap-4 ">
+        <div className="flex flex-col items-center gap-20 ">
             <div className="B flex items-center">
                 <div className="C absolute left-8 h-2 w-2 "></div>
                 <h1 className="p-1 text-xl">

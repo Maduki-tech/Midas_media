@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Sec3() {
     return (
-        <div className="mt-8 flex flex-col items-center">
+        <div className="mt-8 flex flex-col items-center gap-20">
             <h1 className="text-3xl font-bold">
                 Kunden die uns <span className="text-cText">vertrauen:</span>
             </h1>
@@ -21,6 +21,7 @@ export default function Sec3() {
                 <CallToAction />
                 <CTAButton lineclass="G" />
                 <div className="H absolute right-10 h-24 w-2 bg-transparent"></div>
+                <div className="I absolute left-10 h-24 w-2 bg-transparent"></div>
             </div>
         </div>
     );
