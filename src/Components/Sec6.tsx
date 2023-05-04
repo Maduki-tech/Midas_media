@@ -1,7 +1,7 @@
 import React from 'react';
 import { CTAButton, CallToAction } from './CallToAction';
 import Image from 'next/image';
-import logo from '~/../public/logo.png';
+import logo from '~/../public/Logo.png';
 import { motion } from 'framer-motion';
 
 export default function Sec6() {
