@@ -66,7 +66,7 @@ function Kachel({ icon, title, text }: KachelProps) {
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="flex w-4/5 flex-col items-center gap-4 rounded-xl border-2 border-black bg-cBlack px-4 py-6 text-white shadow-md shadow-cBlack hover:shadow-cRed"
+            className="flex w-4/5 flex-col items-center gap-4 rounded-xl border-2 border-white bg-cBlack px-4 py-6 text-white shadow-md shadow-cBlack hover:shadow-cRed"
         >
         {/* TODO: CHANGE FOR ICONS */}
             {/* <Image src={icon} alt={title} width={150} className="" /> */}
