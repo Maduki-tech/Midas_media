@@ -68,7 +68,7 @@ const Home: NextPage = () => {
                         from="D"
                         to="E"
                         borderStyle="dashed"
-                        fromAnchor="left"
+                        fromAnchor="center"
                         toAnchor="left"
                         borderWidth={2}
                     />

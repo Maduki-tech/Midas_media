@@ -5,7 +5,7 @@ export default function Sec2() {
     return (
         <div className="flex flex-col items-center gap-4 ">
             <div className="B flex items-center">
-                <div className="C absolute left-8 h-2 w-2 bg-cRed"></div>
+                <div className="C absolute left-8 h-2 w-2 "></div>
                 <h1 className="p-1 text-xl">
                     Die <span className="text-cText">Vorteile</span> von Social
                     Recruiting sind vielfältig
@@ -42,13 +42,10 @@ export default function Sec2() {
                 Bist du bereit, deinen Mitarbeiter einzustellen?
             </h1>
 
-            <div className='flex justify-end' >
-                <div className="flex flex-col items-center">
-                    <CallToAction />
-                    <CTAButton lineclass="E" />
-                </div>
-
-                <div className="C absolute left-8 h-2 w-2 bg-cRed"></div>
+            <div className="flex flex-col items-center">
+                <CallToAction />
+                <CTAButton lineclass="E" />
+                <div className="D absolute left-8 h-24 w-2 bg-transparent"></div>
             </div>
         </div>
     );
