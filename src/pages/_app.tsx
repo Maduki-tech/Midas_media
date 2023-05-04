@@ -1,9 +1,9 @@
 import { type AppType } from 'next/dist/shared/lib/utils';
 import Script from 'next/script';
-import {Montserrat} from 'next/font/google'
+import { Montserrat } from 'next/font/google';
 
 import '~/styles/globals.css';
-const montserrat = Montserrat({subsets: ['latin']})
+const montserrat = Montserrat({ subsets: ['latin'] });
 
 const MyApp: AppType = ({ Component, pageProps }) => {
     return (

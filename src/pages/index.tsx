@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import LineTo from 'react-lineto';
 import Sec2 from '~/Components/Sec2';
+import Sec3 from '~/Components/Sec3';
 import Sec1 from '~/Components/sec1';
 
 const DynamicSteppedLineTo = dynamic(
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
             <main className="">
                 <Sec1 />
                 <Sec2 />
+                <Sec3 />
                 {isClient && (
                     <DynamicSteppedLineTo
                         from="A"
@@ -70,6 +72,36 @@ const Home: NextPage = () => {
                         borderStyle="dashed"
                         fromAnchor="center"
                         toAnchor="left"
+                        borderWidth={2}
+                    />
+                )}
+                {isClient && (
+                    <DynamicSteppedLineTo
+                        from="E"
+                        to="F"
+                        borderStyle="dashed"
+                        fromAnchor="right"
+                        toAnchor="left"
+                        borderWidth={2}
+                    />
+                )}
+                {isClient && (
+                    <DynamicSteppedLineTo
+                        from="F"
+                        to="H"
+                        borderStyle="dashed"
+                        fromAnchor="left"
+                        toAnchor="right"
+                        borderWidth={2}
+                    />
+                )}
+                {isClient && (
+                    <DynamicSteppedLineTo
+                        from="H"
+                        to="G"
+                        borderStyle="dashed"
+                        fromAnchor="left"
+                        toAnchor="right"
                         borderWidth={2}
                     />
                 )}

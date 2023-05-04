@@ -1,5 +1,6 @@
 import React from 'react';
 import { CallToAction, CTAButton } from './CallToAction';
+import { motion } from 'framer-motion';
 
 export default function Sec2() {
     return (
@@ -46,6 +47,7 @@ export default function Sec2() {
                 <CallToAction />
                 <CTAButton lineclass="E" />
                 <div className="D absolute left-8 h-24 w-2 bg-transparent"></div>
+                <div className="F absolute right-8 h-24 w-2 bg-transparent"></div>
             </div>
         </div>
     );
@@ -59,11 +61,18 @@ type KachelProps = {
 
 function Kachel({ icon, title, text }: KachelProps) {
     return (
-        <div className="flex w-4/5 flex-col items-center gap-4 rounded-xl border-2 border-black bg-cBlack px-4 py-6 text-white shadow-xl shadow-white">
+        <motion.div
+            initial={{ opacity: 0 }}
+            transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="flex w-4/5 flex-col items-center gap-4 rounded-xl border-2 border-black bg-cBlack px-4 py-6 text-white shadow-md shadow-cBlack hover:shadow-cRed"
+        >
+        {/* TODO: CHANGE FOR ICONS */}
             {/* <Image src={icon} alt={title} width={150} className="" /> */}
             <div className="h-12 w-12 bg-cBlue"></div>
             <h2 className="text-center text-xl font-bold">{title}</h2>
             <h4 className="my-4 text-center text-lg">{text}</h4>
-        </div>
+        </motion.div>
     );
 }
