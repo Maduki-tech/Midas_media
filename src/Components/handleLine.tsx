@@ -198,6 +198,72 @@ export default function HandleLine() {
                     borderWidth={2}
                 />
             )}
+            {isClient && (
+                <DynamicSteppedLineTo
+                    from="R"
+                    to="S"
+                    borderStyle="dashed"
+                    fromAnchor="right"
+                    toAnchor="center"
+                    orientation="h"
+                    borderWidth={2}
+                />
+            )}
+            {isClient && (
+                <DynamicSteppedLineTo
+                    from="S"
+                    to="T"
+                    borderStyle="dashed"
+                    fromAnchor="right"
+                    toAnchor="center"
+                    orientation="v"
+                    borderWidth={2}
+                />
+            )}
+            {isClient && (
+                <DynamicSteppedLineTo
+                    from="T"
+                    to="U"
+                    borderStyle="dashed"
+                    fromAnchor="right"
+                    toAnchor="center"
+                    orientation="v"
+                    borderWidth={2}
+                />
+            )}
+            {isClient && (
+                <DynamicSteppedLineTo
+                    from="U"
+                    to="V"
+                    borderStyle="dashed"
+                    fromAnchor="right"
+                    toAnchor="center"
+                    orientation="v"
+                    borderWidth={2}
+                />
+            )}
+            {isClient && (
+                <DynamicSteppedLineTo
+                    from="V"
+                    to="W"
+                    borderStyle="dashed"
+                    fromAnchor="right"
+                    toAnchor="center"
+                    orientation="v"
+                    borderWidth={2}
+                />
+            )}
+            {isClient && (
+                <DynamicSteppedLineTo
+                    from="W"
+                    to="X"
+                    borderStyle="dashed"
+                    fromAnchor="right"
+                    toAnchor="center"
+                    orientation="v"
+                    borderWidth={2}
+                />
+            )}
         </div>
     );
 }
