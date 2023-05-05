@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Sec3() {
     return (
-        <div className="mt-8 flex flex-col items-center gap-20">
+        <div className="odd mt-8 flex flex-col items-center gap-20">
             <h1 className="text-3xl font-bold">
                 Kunden die uns <span className="text-cText">vertrauen:</span>
             </h1>

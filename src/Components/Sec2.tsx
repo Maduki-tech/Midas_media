@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 
 export default function Sec2() {
     return (
-        <div className="flex flex-col items-center gap-20 ">
+        <div className="flex flex-col items-center gap-20 even">
             <div className="B flex items-center">
                 <div className="C absolute left-8 h-2 w-2 "></div>
-                <h1 className="p-1 text-xl">
+                <h1 className="p-1 text-3xl">
                     Die <span className="text-cText">Vorteile</span> von Social
                     Recruiting sind vielfältig
                 </h1>
@@ -66,7 +66,7 @@ function Kachel({ icon, title, text }: KachelProps) {
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="flex w-4/5 flex-col items-center gap-4 rounded-xl border-2 border-white bg-cBlack px-4 py-6 text-white shadow-md shadow-cBlack hover:shadow-cRed"
+            className="flex w-4/5 flex-col items-center gap-4 rounded-xl border-2 border-white bg-cBlack px-4 py-6 text-white shadow shadow-white hover:shadow-lg hover:shadow-white"
         >
         {/* TODO: CHANGE FOR ICONS */}
             {/* <Image src={icon} alt={title} width={150} className="" /> */}

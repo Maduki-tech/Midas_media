@@ -4,7 +4,7 @@ import { CTAButton, CallToAction } from './CallToAction';
 
 export default function Sec5() {
     return (
-        <div className="mt-8 flex flex-col items-center gap-20">
+        <div className=" odd mt-8 flex flex-col items-center gap-20">
             <h1 className="text-3xl text-cText">
                 Deshalb kommst du um Social Recruiting nicht herum!
             </h1>

@@ -3,7 +3,7 @@ import { CTAButton, CallToAction } from './CallToAction';
 
 export default function Sec4() {
     return (
-        <div className="mt-8 flex flex-col items-center gap-20">
+        <div className=" even mt-8 flex flex-col items-center gap-20">
             <h2 className="w-2/3 text-center text-3xl font-bold">
                 <span className="text-cText">Booste dein Unternehmen:</span>{' '}
                 Kostenlos Beratungsgespräch für dein{' '}

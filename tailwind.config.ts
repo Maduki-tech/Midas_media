@@ -10,8 +10,9 @@ export default {
                 cGray: '#bcbcbc',
                 cBlue: '#5700f9',
                 cText: '#db2f37',
+                cBG: '#131624',
             },
         },
     },
-    plugins: [],
+    plugins: [require('tailwindcss-neumorphism')],
 } satisfies Config;

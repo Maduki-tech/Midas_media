@@ -5,12 +5,12 @@ import { CTAButton, CallToAction } from './CallToAction';
 
 export default function Sec8() {
     return (
-        <div className="flex flex-col items-center gap-20">
-            <h1 className="animate-pulse text-center text-3xl font-bold text-cRed">
+        <div className=" even flex flex-col items-center gap-20">
+            <h1 className=" text-center text-3xl font-bold text-cRed">
                 Limitiertes Angebot
             </h1>
-            <div className="grid grid-cols-2">
-                <p className="text-center">
+            <div className="grid grid-cols-2 place-items-center">
+                <p className=" w-1/2 text-center">
                     Wir haben eine aufregende Neuigkeit für dich! Wir haben ein
                     limitiertes Angebot, das nur für kurze Zeit verfügbar ist.
                     Aber zuerst möchten wir betonen, dass wir nicht mit jedem
@@ -32,7 +32,7 @@ export default function Sec8() {
                     unterstützen!
                 </p>
 
-                <div className="h-full w-full"> <Image src={sale} alt='sale gif' width={400}/></div>
+                <div className="h-1/2 w-1/2"> <Image src={sale} alt='sale gif' width={400}/></div>
             </div>
             <div className="flex flex-col items-center">
                 <CallToAction />

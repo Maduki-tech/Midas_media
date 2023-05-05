@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Sec9() {
     return (
-        <div className="flex flex-col items-center gap-8 mt-8">
+        <div className=" odd flex flex-col items-center gap-8 mt-8">
             <h1 className="text-center text-3xl font-bold text-cRed">Fazit</h1>
 
             <p className='w-1/2 text-center'>
