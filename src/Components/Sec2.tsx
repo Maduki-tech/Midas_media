@@ -1,10 +1,14 @@
 import React from 'react';
+import Image from 'next/image';
 import { CallToAction, CTAButton } from './CallToAction';
 import { motion } from 'framer-motion';
+import growth from '~/../public/growth.svg';
+import saving from '~/../public/saving.svg';
+import search from '~/../public/search.svg';
 
 export default function Sec2() {
     return (
-        <div className="flex flex-col items-center gap-20 even">
+        <div className="even flex flex-col items-center gap-20">
             <div className="B flex items-center">
                 <div className="C absolute left-8 h-2 w-2 "></div>
                 <h1 className="p-1 text-3xl">
@@ -23,17 +27,17 @@ export default function Sec2() {
             </div>
             <div className="grid grid-cols-3 justify-items-center">
                 <Kachel
-                    icon=""
+                    icon={growth as HTMLImageElement}
                     title="Erhöhung der Reichweite"
                     text="Social Media erhöht die Reichweite von Unternehmen bei der Suche nach qualifizierten Kandidaten. Es hilft, offene Stellen bekannt zu machen, die sonst möglicherweise unentdeckt geblieben wären."
                 />
                 <Kachel
-                    icon=""
+                    icon={search as HTMLImageElement}
                     title="Gezielte Suche"
                     text="Nutze Social-Media-Plattformen gezielt, um Kandidaten mit spezifischen Fähigkeiten, Erfahrungen und Qualifikationen zu finden."
                 />
                 <Kachel
-                    icon=""
+                    icon={saving as HTMLImageElement}
                     title="Reduzierung von Kosten und Zeitaufwand"
                     text="Durch Social Recruiting sparst du Zeit und Geld im Vergleich zu herkömmlichen Methoden wie Zeitungsanzeigen oder Jobportalen."
                 />
@@ -54,7 +58,7 @@ export default function Sec2() {
 }
 
 type KachelProps = {
-    icon: string;
+    icon: HTMLImageElement;
     title: string;
     text: string;
 };
@@ -68,9 +72,8 @@ function Kachel({ icon, title, text }: KachelProps) {
             viewport={{ once: true }}
             className="flex w-4/5 flex-col items-center gap-4 rounded-xl border-2 border-white bg-cBlack px-4 py-6 text-white shadow shadow-white hover:shadow-lg hover:shadow-white"
         >
-        {/* TODO: CHANGE FOR ICONS */}
-            {/* <Image src={icon} alt={title} width={150} className="" /> */}
-            <div className="h-12 w-12 bg-cBlue"></div>
+            <Image src={icon} alt={title} width={150} className="" />
+            {/* <div className="h-12 w-12 bg-cBlue"></div> */}
             <h2 className="text-center text-xl font-bold">{title}</h2>
             <h4 className="my-4 text-center text-lg">{text}</h4>
         </motion.div>

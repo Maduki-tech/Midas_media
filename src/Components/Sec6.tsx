@@ -82,6 +82,7 @@ export default function Sec6() {
                             'https://midasmedia.de/wp-content/uploads/2022/06/DSC0784.webp'
                         }
                         alt="Midas Logo"
+                        className='rounded-xl'
                         width={400}
                         height={200}
                     />

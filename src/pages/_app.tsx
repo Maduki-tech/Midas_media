@@ -17,10 +17,13 @@ const MyApp: AppType = ({ Component, pageProps }) => {
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
-
           gtag('config', 'G-2BQ316HYBQ');
+          gtag('set', 'send_to', 'G-2BQ316HYBQ');
+          gtag('event', 'page_view');
         `}
             </Script>
+
+            <Script src="//embed.typeform.com/next/embed.js"></Script>
             <Component {...pageProps} />
         </div>
     );

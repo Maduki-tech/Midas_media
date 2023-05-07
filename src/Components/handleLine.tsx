@@ -264,6 +264,28 @@ export default function HandleLine() {
                     borderWidth={2}
                 />
             )}
+            {isClient && (
+                <DynamicSteppedLineTo
+                    from="X"
+                    to="Y"
+                    borderStyle="dashed"
+                    fromAnchor="right"
+                    toAnchor="center"
+                    orientation="v"
+                    borderWidth={2}
+                />
+            )}
+            {isClient && (
+                <DynamicSteppedLineTo
+                    from="Y"
+                    to="Z"
+                    borderStyle="dashed"
+                    fromAnchor="center left"
+                    toAnchor="right"
+                    orientation="h"
+                    borderWidth={2}
+                />
+            )}
         </div>
     );
 }
