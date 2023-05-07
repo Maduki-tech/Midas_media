@@ -96,7 +96,7 @@ function QaA({ question, answer }: QProps) {
     );
 }
 
-function CompactCard({ children, onExpand, disabled }: any) {
+function CompactCard({ children, onExpand, disabled }: { children: React.ReactNode; onExpand: () => void; disabled?: boolean }) {
     return (
         <motion.div className="w-[60vw] text-center border-2 border-cBlue rounded-full shadow-md shadow-cBlue p-2 hover:cursor-pointer hover:shadow-md hover:shadow-cRed hover:scale-105" onClick={disabled ? undefined : onExpand}>
             {children}
@@ -104,7 +104,7 @@ function CompactCard({ children, onExpand, disabled }: any) {
     );
 }
 
-function ExpandedCard({ children, onCollapse, answer }: any) {
+function ExpandedCard({ children, onCollapse, answer }: { children: React.ReactNode; onCollapse: () => void; answer: string }) {
     const handleCollapse = (event: React.MouseEvent) => {
         if (event.target === event.currentTarget) {
             onCollapse();

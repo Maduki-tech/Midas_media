@@ -22,7 +22,7 @@ export const CTAButton = ({ lineclass }: CallToActionProps) => {
             <button
                 className={`relative w-fit rounded-full px-5 py-3 bg-gradient-to-r from-cRed to-cBlue text-xl text-white ${lineclass} z-10`}
             >
-                <Link href="">Jetzt Buchen</Link>
+                <Link href="#form" scroll={false}>Jetzt Buchen</Link>
             </button>
         </div>
     );
