@@ -25,7 +25,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
 
             <Script src="//embed.typeform.com/next/embed.js"></Script>
 
-            <Script id='hotjar'>
+            <Script id="hotjar">
                 {`(function(h,o,t,j,a,r){
                     h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
                     h._hjSettings={hjid:3481433,hjsv:6};
